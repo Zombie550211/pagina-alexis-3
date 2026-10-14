@@ -1,0 +1,7 @@
+# Configuración local del editor/agente
+.claude/
+
+# Originales pesados: la página usa las versiones .webp
+images/casa-wifi.png
+images/usuario.png
+images/tv.jpeg
