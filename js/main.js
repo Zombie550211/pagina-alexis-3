@@ -11,9 +11,13 @@ navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   navMenu.classList.remove('is-open');
   burger.setAttribute('aria-expanded', false);
 }));
-window.addEventListener('scroll', () => {
+const callFloat = document.querySelector('.call-float');
+const onScroll = () => {
   nav.classList.toggle('is-scrolled', window.scrollY > 10);
-}, { passive: true });
+  callFloat?.classList.toggle('is-visible', window.scrollY > 10);
+};
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
 // ============================ HERO 3D ============================
 const media = document.querySelector('.hero-split__media');
