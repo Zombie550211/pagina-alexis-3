@@ -28,7 +28,7 @@ customHeaders:
     headers:
       - key: 'Cache-Control'
         value: 'public, max-age=31536000, immutable'
-  - pattern: 'favicon.svg'
+  - pattern: 'favicon.ico'
     headers:
       - key: 'Cache-Control'
         value: 'public, max-age=604800'
